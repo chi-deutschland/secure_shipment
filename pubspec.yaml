@@ -1,0 +1,66 @@
+name: secure_shipment
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.1
+
+  #for pin input
+  pinput: ^2.2.9
+  #for saving camera image
+  path_provider: ^2.0.10
+  #for saving image to gallery
+  gallery_saver: ^2.3.2
+  #provider for state management
+  provider: ^6.0.2
+  #rive animated splash screen
+  rive_splash_screen: ^0.1.0
+  #rive animations
+  rive: ^0.8.4
+  # Video Player Dependency
+  video_player: ^2.4.2
+
+  #animations
+  simple_animations: ^4.0.2
+  supercharged: ^2.1.1
+  animated_button: ^0.2.0
+  #ml kit
+  google_ml_kit: ^0.7.1
+  #camera plugin
+  camera: ^0.9.6
+
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/
+  fonts:
+    - family: SFPro-Regular
+      fonts:
+        - asset: fonts/SFProDisplay-Regular.ttf
+    - family: SFPro-Bold
+      fonts:
+        - asset: fonts/SFProDisplay-Bold.ttf
+
