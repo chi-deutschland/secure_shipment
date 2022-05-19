@@ -11,6 +11,7 @@ path_provider_linux=/opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/host
 path_provider_macos=/opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.6/
 path_provider_windows=/opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.6/
 smart_auth=/opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/smart_auth-1.0.5/
+sqflite=/opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-2.0.2+1/
 video_player=/opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/video_player-2.4.2/
 video_player_android=/opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/video_player_android-2.3.4/
 video_player_avfoundation=/opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/video_player_avfoundation-2.3.4/
