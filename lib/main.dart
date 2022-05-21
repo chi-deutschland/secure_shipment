@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:secure_shipment/providers/app_provider.dart';
+import 'package:secure_shipment/screens/camera_stream.dart';
 import 'package:secure_shipment/screens/login_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:rive_splash_screen/rive_splash_screen.dart';
+import 'package:secure_shipment/screens/regulated_entities.dart';
+import 'package:secure_shipment/screens/securing_screen.dart';
+import 'package:secure_shipment/screens/start_screen.dart';
 import 'package:secure_shipment/screens/status_screen.dart';
 
 void main() {
@@ -54,15 +58,10 @@ class MyApp extends StatelessWidget {
             // '/': (context) => LoginScreen(),
             '/login': (context) => LoginScreen(),
             '/status': (context) => StatusScreen(),
-            // '/ocr': (context) => Ocr(),
-            // '/loading': (context) => LoadingScreen(nName: '', pPin: ''),
-            // '/chi_cargo_validation': (context) => ChiCargoValidation(
-            //       imageTempPath: '',
-            //       uploadStatus: null,
-            //     ),
-            // '/enter_master': (context) => EnterMaster(
-            //       imageTempPath: '',
-            //    ),
+            '/securing_screen': (context) => SecuringScreen(),
+            '/start_screen': (context) => StartScreen(),
+            '/regulated_entities': (context) => RegulatedEntitiesScreen(),
+            '/camera_stream': (context) => CameraStream(),
           }),
     );
   }

@@ -121,8 +121,6 @@ class _CameraStreamState extends State<CameraStream> {
     return CustomPaint(
       painter: painter,
     );
-
-    //if (_scanResults is! RecognisedText) return noResultsText;
   }
 
   Widget _buildImage() {
