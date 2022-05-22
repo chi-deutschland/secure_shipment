@@ -17,7 +17,8 @@
 
  #
  ## Screenshots
-
+ - Secure login for security agent
+  ![Screenshot](https://github.com/chi-deutschland/secure_shipment/blob/main/images/loading.gif)
 
  - Overview screen with ongoing security processes
   ![Screenshot](/images/1.jpg)
