@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:secure_shipment/config/colors.dart';
 import 'package:secure_shipment/screens/start_screen.dart';
+import 'package:secure_shipment/widgets/piece_details_card.dart';
 
 import '../config/dimens.dart';
 import '../config/fonts.dart';
@@ -13,9 +14,29 @@ class StatusScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        iconTheme: const IconThemeData(
+          color: Colors.black, //change your color here
+        ),
+        elevation: 35,
+        backgroundColor: primaryGradientColor,
+        title: const Text(
+          "Ongoing security processes",
+          style: TextStyle(
+              fontSize: biggerText,
+              color: secondaryTextColor,
+              fontFamily: sfprobold),
+        ),
+      ),
       body: Column(
         children: [
-          const Card(),
+          const SizedBox(
+            height: 30,
+          ),
+          PieceDetailsCard(),
+          const SizedBox(
+            height: 30,
+          ),
           Spacer(),
           Padding(
             padding: const EdgeInsets.all(8.0),

@@ -1,10 +1,15 @@
+import 'dart:io';
+
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:google_ml_kit/google_ml_kit.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:secure_shipment/data_models/piece_data_model.dart';
 
+import '../providers/app_provider.dart';
 import '../utils/barcode_detector_painter.dart';
 import '../utils/ml_kit_ocr.dart';
 
@@ -23,7 +28,6 @@ class _CameraStreamState extends State<CameraStream> {
   dynamic _scanResults;
   CustomPaint? customPaint;
   late String master;
-
   // temporary state that allows only ocr when previous task finished
   bool _isDetecting = false;
   // specifies which type should be detected e.g ocr, barcode, face, label
@@ -72,29 +76,6 @@ class _CameraStreamState extends State<CameraStream> {
     });
   }
 
-  void onCameraButtonPress() async {
-    HapticFeedback.heavyImpact();
-
-    try {
-      if (!camera!.value.isInitialized) {
-        showInSnackBar('Error: select a camera first.');
-        return null;
-      }
-
-      closeCameraAndStream();
-
-      SchedulerBinding.instance!.addPostFrameCallback((_) {
-        // add your code here.
-        Navigator.popAndPushNamed(context, '/piece');
-      });
-    } on CameraException catch (e) {
-      _showCameraException(e);
-      return null;
-    } catch (e) {
-      // If an error occurs, log the error to the console.
-    }
-  }
-
   Widget _buildResults() {
     const Text noResultsText = Text('No results!');
 
@@ -109,10 +90,36 @@ class _CameraStreamState extends State<CameraStream> {
 
     for (Barcode bc in _scanResults) {
       if (bc.type == BarcodeType.url) {
+        PieceModel pm = PieceModel(
+          id: "1",
+          type: "1",
+          httpsOnerecordIataOrgCargoPieceCompanyIdentifier: "1",
+          httpsOnerecordIataOrgCargoPieceShipper:
+              HttpsOnerecordIataOrgCargoPieceShipper(id: "1", type: "1"),
+          httpsOnerecordIataOrgCargoPieceCoload: true,
+          httpsOnerecordIataOrgCargoPieceDeclaredValueForCustoms: "1",
+          httpsOnerecordIataOrgCargoPieceGoodsDescription: "1",
+          httpsOnerecordIataOrgCargoPieceGrossWeight: "1",
+          httpsOnerecordIataOrgCargoPieceNvdForCarriage: true,
+          httpsOnerecordIataOrgCargoPieceNvdForCustoms: true,
+          httpsOnerecordIataOrgCargoPiecePackagedeIdentifier: "1",
+          httpsOnerecordIataOrgCargoPieceShippingMarks: "1",
+          httpsOnerecordIataOrgCargoPieceSlac: 1,
+          httpsOnerecordIataOrgCargoPieceStackable: true,
+          httpsOnerecordIataOrgCargoPieceTurnable: true,
+          httpsOnerecordIataOrgCargoPieceUpid: "1",
+        );
+
+        Provider.of<AppProvider>(context).addPieceToList(pm);
+        //void pauseAWhile;
+
         closeCameraAndStream();
+
+        // Navigator.pop(context);
 
         WidgetsBinding.instance.addPostFrameCallback((_) {
           // Navigator.popAndPushNamed(context, '/piece');
+
           Navigator.pop(context);
         });
       }
@@ -121,6 +128,10 @@ class _CameraStreamState extends State<CameraStream> {
     return CustomPaint(
       painter: painter,
     );
+  }
+
+  void pauseAWhile() async {
+    await Future.delayed(const Duration(seconds: 2), () {});
   }
 
   Widget _buildImage() {
@@ -155,24 +166,6 @@ class _CameraStreamState extends State<CameraStream> {
         Center(
           child: _buildImage(),
         ),
-        // _detectedMAWBCell(),
-        // SingleTextButtonBottomBar(
-        //   label: 'Barcode Scannen',
-        //   blurStrengthX: 10,
-        //   blurStrengthY: 10,
-        //   borderColor: grayTextColor.withOpacity(0.1),
-        //   barColor: CupertinoDynamicColor.resolve(
-        //     CupertinoTheme.of(context).barBackgroundColor.withOpacity(0.6),
-        //     context,
-        //   ),
-        //   textStyle: TextStyle(
-        //       fontSize: bigText, color: blueColor, fontFamily: sfproregular),
-        //   onTap: () {
-        //     Vibration.vibrate();
-        //     onCameraButtonPress();
-        //   },
-        //   height: 90,
-        // )
       ],
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:secure_shipment/screens/securing_screen.dart';
+import 'package:secure_shipment/widgets/regulated_entities_details_card.dart';
 
 import '../config/colors.dart';
 import '../config/dimens.dart';
@@ -12,49 +13,28 @@ class RegulatedEntitiesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        iconTheme: const IconThemeData(
+          color: Colors.black, //change your color here
+        ),
+        elevation: 35,
+        backgroundColor: primaryGradientColor,
+        title: const Text(
+          "Regulated Entities",
+          style: TextStyle(
+              fontSize: biggerText,
+              color: secondaryTextColor,
+              fontFamily: sfprobold),
+        ),
+      ),
       body: Column(
         children: [
-          Container(
-            alignment: Alignment.center,
-            margin: const EdgeInsets.only(right: 20, left: 20, top: 5),
-            decoration: BoxDecoration(
-              borderRadius: borderRadiusCard,
-              boxShadow: [
-                boxShadowCard,
-              ],
-              color: Colors.white54,
-            ),
-            child: Stack(
-              children: [
-                Align(
-                  alignment: Alignment.topLeft,
-                  child: Padding(
-                      padding: const EdgeInsets.fromLTRB(10, 10, 20, 10),
-                      child: Row(
-                        children: const [
-                          Padding(
-                            padding: EdgeInsets.only(left: 3.0),
-                            child: Text('Status',
-                                style: TextStyle(
-                                    fontSize: smallText,
-                                    color: redColor,
-                                    fontFamily: sfproregular)),
-                          ),
-                        ],
-                      )),
-                ),
-                const Padding(
-                  padding: EdgeInsets.fromLTRB(10, 35, 20, 10),
-                  child: Text(
-                    'XYZ',
-                    style: TextStyle(
-                        fontSize: smallText,
-                        color: grayOpacityTextColor,
-                        fontFamily: sfproregular),
-                  ),
-                ),
-              ],
-            ),
+          const SizedBox(
+            height: 20,
+          ),
+          RegulatedEntitiesDetailsCard(),
+          const SizedBox(
+            height: 20,
           ),
           GestureDetector(
             onTap: () {

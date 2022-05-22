@@ -31,6 +31,10 @@ dependencies:
   rive: ^0.8.4
   # Video Player Dependency
   video_player: ^2.4.2
+  # for pdf
+  pdf: ^3.8.1
+  flutter_full_pdf_viewer:
+    git: https://github.com/Jagrajsinghji/flutter_full_pdf_viewer
 
   #animations
   simple_animations: ^4.0.2

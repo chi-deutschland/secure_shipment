@@ -9,56 +9,39 @@ import '../config/dimens.dart';
 import '../config/fonts.dart';
 import 'package:animated_button/animated_button.dart';
 
+import '../widgets/securing_process_details_card.dart';
+
 class StartScreen extends StatelessWidget {
   const StartScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        iconTheme: const IconThemeData(
+          color: Colors.black, //change your color here
+        ),
+        elevation: 35,
+        backgroundColor: primaryGradientColor,
+        title: const Text(
+          "Securing Process",
+          style: TextStyle(
+              fontSize: biggerText,
+              color: secondaryTextColor,
+              fontFamily: sfprobold),
+        ),
+      ),
       body: Column(
         children: [
-          Container(
-            alignment: Alignment.center,
-            margin: EdgeInsets.only(right: 20, left: 20, top: 5),
-            decoration: BoxDecoration(
-              borderRadius: borderRadiusCard,
-              boxShadow: [
-                boxShadowCard,
-              ],
-              color: Colors.white54,
-            ),
-            child: Stack(
-              children: [
-                Align(
-                  alignment: Alignment.topLeft,
-                  child: Padding(
-                      padding: const EdgeInsets.fromLTRB(10, 10, 20, 10),
-                      child: Row(
-                        children: const [
-                          Icon(CupertinoIcons.wifi_slash, color: redColor),
-                          Padding(
-                            padding: EdgeInsets.only(left: 3.0),
-                            child: Text('Status',
-                                style: TextStyle(
-                                    fontSize: smallText,
-                                    color: redColor,
-                                    fontFamily: sfproregular)),
-                          ),
-                        ],
-                      )),
-                ),
-                const Padding(
-                  padding: EdgeInsets.fromLTRB(10, 35, 20, 10),
-                  child: Text(
-                    'XYZ',
-                    style: TextStyle(
-                        fontSize: smallText,
-                        color: grayOpacityTextColor,
-                        fontFamily: sfproregular),
-                  ),
-                ),
-              ],
-            ),
+          const SizedBox(
+            height: 30,
+          ),
+          SecuringProcessDetailsCard(
+            weight: "10 kg",
+            desc: "MBP",
+          ),
+          const SizedBox(
+            height: 10,
           ),
           GestureDetector(
             onTap: () {

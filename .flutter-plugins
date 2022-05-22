@@ -1,6 +1,7 @@
 # This is a generated file; do not edit or check into version control.
 camera=/opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/camera-0.9.6/
 camera_web=/opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/camera_web-0.2.1+6/
+flutter_full_pdf_viewer=/opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/git/flutter_full_pdf_viewer-1ad02175d4748808cac0ec2d39f25b9e24a38016/
 flutter_plugin_android_lifecycle=/opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.6/
 gallery_saver=/opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/gallery_saver-2.3.2/
 google_ml_kit=/opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/google_ml_kit-0.7.3/

@@ -8,6 +8,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "archive",
+      "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "async",
       "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2",
       "packageUri": "lib/",
@@ -16,6 +22,12 @@
     {
       "name": "awesome_dropdown",
       "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/awesome_dropdown-0.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "barcode",
+      "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/barcode-2.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -74,6 +86,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "crypto",
+      "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "csslib",
       "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/csslib-0.17.1",
       "packageUri": "lib/",
@@ -108,6 +126,12 @@
       "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_full_pdf_viewer",
+      "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/git/flutter_full_pdf_viewer-1ad02175d4748808cac0ec2d39f25b9e24a38016/",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
     },
     {
       "name": "flutter_lints",
@@ -170,6 +194,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "image",
+      "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/image-3.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
       "name": "js",
       "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.4",
       "packageUri": "lib/",
@@ -208,6 +238,12 @@
     {
       "name": "path",
       "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path_parsing",
+      "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/path_parsing-1.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -254,6 +290,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "pdf",
+      "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/pdf-3.8.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "petitparser",
+      "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-5.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
       "name": "pinput",
       "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/pinput-2.2.9",
       "packageUri": "lib/",
@@ -282,6 +330,12 @@
       "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/provider-6.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "qr",
+      "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/qr-3.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
     },
     {
       "name": "quiver",
@@ -452,13 +506,19 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "xml",
+      "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.2.3/flutter/.pub-cache/hosted/pub.dartlang.org/xml-6.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
       "name": "secure_shipment",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-05-21T09:33:43.478276Z",
+  "generated": "2022-05-21T19:03:54.256261Z",
   "generator": "pub",
   "generatorVersion": "2.17.0"
 }

@@ -6,6 +6,7 @@ const double biggerText = 22;
 const double biggestText = 32;
 const double hugeText = 50;
 const double smallText = 18;
+const double smallestText = 14;
 
 //screen
 const double screenPadding = 24;
