@@ -32,7 +32,7 @@
   ![Screenshot](/images/4.jpg)
 
  - Consignment security declaration PDF
-  ![Screenshot](/images/pdf.jpeg)
+  ![Screenshot](/images/pdf.jpg)
 
  #
  ## Running the Security App
